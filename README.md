@@ -25,12 +25,12 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-What aspect of security do load balancers protect?
+What aspect of security do load balancers protect?\
 The primary function of load balancers is to spread the traffic across multiple servers. If a server becomes unavailable due to a DDoS attack, 
 load balancers will re-route requests to another server. in doing so, load balancers help to eliminate single points of failure, reduce the attack surface,
 and make it harder to exhaust resources and saturate links.
 
-What is the advantage of a jump box?
+What is the advantage of a jump box?\
 The main advantage of a jump box is to hide an entire network from a potential attacker on the Internet. It also provides a secured access to the network
 and allows for easy installation of software packages to different groups of computers.
 
@@ -38,22 +38,23 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - What does Filebeat watch for? Filebeat watches for log files or locations that the user specify.
 - What does Metricbeat record? Metricbeat watches for metrics from the operating system and from services running on the server.
 
-The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+The configuration details of each machine may be found below.\
+Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name                 | Function          | IP Address | Operating System |
+|----------------------|-------------------|------------|------------------|
+| Jump-Box-Provisioner | Gateway           | 10.0.0.4   | Linux (Ubuntu)   |
+| Web-1                | Web Server        | 10.0.0.7   | Linux (Ubuntu)   |
+| Web-2                | Web Server        | 10.0.0.12  | Linux (Ubuntu)   |
+| Web-3                | Web Server        | 10.0.0.11  | Linux (Ubuntu)   |
+| ELK-server           | Monitoring Server | 10.1.0.4   | Linux (Ubuntu)   |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- My public IP address (I am not going to tell you what it is!)
 
 Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
