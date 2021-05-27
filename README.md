@@ -126,4 +126,14 @@ Answer the following questions to fill in the blanks:
 - Which URL do you navigate to in order to check that the ELK server is running?
   - You navigate to tghe public IP of the ELK server on port 5601 (i.e. http://137.135.13.56:5601/app/kibana#/home)
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+1. Navigate to the ansible directory
+    - cd /etc/ansible
+2. Create playlist
+    - touch install-elk.yml
+3. Open playlist
+    - nano install-elk.yml
+4. Edit & save playlist
+    - Ctrl + Q
+5. Run playlist
+    -  ansible-playbook install-elk.yml
