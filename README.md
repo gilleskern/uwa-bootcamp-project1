@@ -64,7 +64,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
       systemd:
         name: docker
         enabled: yes
-  
+  ```
+  ```yaml
+  ---
   - name: installing and launching filebeat
     hosts: webservers
     become: yes
@@ -94,7 +96,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
       systemd:
         name: filebeat
         enabled: yes
-  
+  ```
+  ```yaml
+  ---
   - name: Install metric beat
     hosts: webservers
     become: true
