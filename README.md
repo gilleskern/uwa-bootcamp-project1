@@ -47,7 +47,7 @@ Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_table
 | Web-1                | Web Server        | 10.0.0.7   | Linux (Ubuntu)   |
 | Web-2                | Web Server        | 10.0.0.12  | Linux (Ubuntu)   |
 | Web-3                | Web Server        | 10.0.0.11  | Linux (Ubuntu)   |
-| ELK-server           | Monitoring Server | 10.1.0.4   | Linux (Ubuntu)   |
+| ELK-Server           | Monitoring Server | 10.1.0.4   | Linux (Ubuntu)   |
 
 ### Access Policies
 
@@ -56,16 +56,19 @@ The machines on the internal network are not exposed to the public Internet.
 Only the jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - My public IP address (I am not going to tell you what it is!)
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by SSH.
+- Which machine did you allow to access your ELK VM? the Jump-Box-Provisioner
+- What was its IP address? 20.37.240.22
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name                 | Publicly Accessible | Allowed IP Addresses |
+|----------------------|---------------------|----------------------|
+| Jump-Box-Provisioner | Yes                 | My Public IP         |
+| Web-1                | No                  | 10.0.0.4             |
+| Web-2                | No                  | 10.0.0.4             |
+| Web-3                | No                  | 10.0.0.4             |
+| ELK-Server           | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
