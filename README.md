@@ -124,7 +124,7 @@ Answer the following questions to fill in the blanks:
   - Each section contains a name in square brackets (i.e. [webservers] or [elk])
   - Add the IP of the specific machines in the according section
 - Which URL do you navigate to in order to check that the ELK server is running?
-  - You navigate to tghe public IP of the ELK server on port 5601 (i.e. http://137.135.13.56:5601/app/kibana#/home)
+  - You navigate to the public IP of the ELK server on port 5601 (i.e. http://137.135.13.56:5601/app/kibana#/home)
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 1. Navigate to the ansible directory
