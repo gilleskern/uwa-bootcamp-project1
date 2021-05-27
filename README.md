@@ -35,8 +35,10 @@ The main advantage of a jump box is to hide an entire network from a potential a
 and allows for easy installation of software packages to different groups of computers.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the event logs and system metrics.
-- What does Filebeat watch for? Filebeat watches for log files or locations that the user specify.
-- What does Metricbeat record? Metricbeat watches for metrics from the operating system and from services running on the server.
+- What does Filebeat watch for? 
+  - Filebeat watches for log files or locations that the user specify.
+- What does Metricbeat record? 
+  - Metricbeat watches for metrics from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.\
 Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table.
@@ -57,8 +59,10 @@ Only the jump box machine can accept connections from the Internet. Access to th
 - My public IP address (I am not going to tell you what it is!)
 
 Machines within the network can only be accessed by SSH.
-- Which machine did you allow to access your ELK VM? the Jump-Box-Provisioner
-- What was its IP address? 20.37.240.22
+- Which machine did you allow to access your ELK VM? 
+  - the Jump-Box-Provisioner
+- What was its IP address? 
+  - 20.37.240.22
 
 A summary of the access policies in place can be found in the table below.
 
@@ -109,9 +113,12 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Kibana (http://137.135.13.56:5601/app/kibana#/home) to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:
-- Which file is the playbook? The playbook file is [install-elk.yml](https://github.com/gilleskern/uwa-bootcamp-project1/blob/main/Ansible/install-elk.yml)
-- Where do you copy it? You need to copy it into the /etc/ansible directory.
-- Which file do you update to make Ansible run the playbook on a specific machine? you need to update the hosts file (/etc/ansible/hosts)
+- Which file is the playbook? 
+  - The playbook file is [install-elk.yml](https://github.com/gilleskern/uwa-bootcamp-project1/blob/main/Ansible/install-elk.yml)
+- Where do you copy it? 
+  - You need to copy it into the /etc/ansible directory.
+- Which file do you update to make Ansible run the playbook on a specific machine? 
+  - You need to update the hosts file (/etc/ansible/hosts)
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
   - You create two different sections inside the host file one for the webservers and one for the ELK server.
   - Each section contains a name in square brackets (i.e. [webservers] or [elk])
